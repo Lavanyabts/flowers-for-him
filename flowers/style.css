@@ -169,8 +169,8 @@ body {
     position: relative;
     animation: blooming-flower 2s backwards;
 
-    $delay: 0.8;
-    $inc: 0.3;
+    display: 0.8;
+    inc: 0.3;
 
     @for $i from 1 through 3 {
       &--#{$i} {
@@ -480,7 +480,7 @@ body {
     }
   }
 
-  &__grass {
+  __grass {
     --c: #159faa;
     --line-w: 1.5vmin;
 
@@ -494,11 +494,11 @@ body {
     transform-origin: bottom center;
     transform: rotate(-48deg) rotateY(40deg);
 
-    &--1 {
+    --1 {
       animation: moving-grass 2s linear infinite;
     }
 
-    &--2 {
+    --2 {
       left: 2vmin;
       bottom: 10vmin;
       transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
@@ -523,7 +523,7 @@ body {
       background-image: linear-gradient(to top, transparent, var(--c));
     }
 
-    &__leaf {
+    __leaf {
       --size: 10vmin;
       position: absolute;
       width: calc(var(--size) * 2.1);
@@ -538,7 +538,7 @@ body {
       );
       z-index: 100;
 
-      $speed-leaf: 2s;
+      speed-leaf: 2s;
 
       &--1 {
         top: -6%;
@@ -554,12 +554,12 @@ body {
         }
       }
 
-      &--2 {
+      --2 {
         top: -5%;
         left: -110%;
         --size: 6vmin;
         transform: rotate(10deg);
-        animation: growing-grass-ans--2 $speed-leaf 2.4s linear backwards;
+        animation: growing-grass-ans--2 speed-leaf 2.4s linear backwards;
         @keyframes growing-grass-ans--2 {
           0% {
             transform-origin: bottom right;
@@ -568,12 +568,12 @@ body {
         }
       }
 
-      &--3 {
+      --3 {
         top: 5%;
         left: 60%;
         --size: 8vmin;
         transform: rotate(-18deg) rotateX(-20deg);
-        animation: growing-grass-ans--3 $speed-leaf 2.2s linear backwards;
+        animation: growing-grass-ans--3 speed-leaf 2.2s linear backwards;
         @keyframes growing-grass-ans--3 {
           0% {
             transform-origin: bottom left;
@@ -582,12 +582,12 @@ body {
         }
       }
 
-      &--4 {
+      --4 {
         top: 6%;
         left: -135%;
         --size: 8vmin;
         transform: rotate(2deg);
-        animation: growing-grass-ans--4 $speed-leaf 2s linear backwards;
+        animation: growing-grass-ans--4 speed-leaf 2s linear backwards;
         @keyframes growing-grass-ans--4 {
           0% {
             transform-origin: bottom right;
@@ -596,12 +596,12 @@ body {
         }
       }
 
-      &--5 {
+      --5 {
         top: 20%;
         left: 60%;
         --size: 10vmin;
         transform: rotate(-24deg) rotateX(-20deg);
-        animation: growing-grass-ans--5 $speed-leaf 1.8s linear backwards;
+        animation: growing-grass-ans--5 speed-leaf 1.8s linear backwards;
         @keyframes growing-grass-ans--5 {
           0% {
             transform-origin: bottom left;
@@ -610,12 +610,12 @@ body {
         }
       }
 
-      &--6 {
+      --6 {
         top: 22%;
         left: -180%;
         --size: 10vmin;
         transform: rotate(10deg);
-        animation: growing-grass-ans--6 $speed-leaf 1.6s linear backwards;
+        animation: growing-grass-ans--6 speed-leaf 1.6s linear backwards;
         @keyframes growing-grass-ans--6 {
           0% {
             transform-origin: bottom right;
@@ -624,12 +624,12 @@ body {
         }
       }
 
-      &--7 {
+      --7 {
         top: 39%;
         left: 70%;
         --size: 10vmin;
         transform: rotate(-10deg);
-        animation: growing-grass-ans--7 $speed-leaf 1.4s linear backwards;
+        animation: growing-grass-ans--7 speed-leaf 1.4s linear backwards;
         @keyframes growing-grass-ans--7 {
           0% {
             transform-origin: bottom left;
@@ -638,12 +638,12 @@ body {
         }
       }
 
-      &--8 {
+      --8 {
         top: 40%;
         left: -215%;
         --size: 11vmin;
         transform: rotate(10deg);
-        animation: growing-grass-ans--8 $speed-leaf 1.2s linear backwards;
+        animation: growing-grass-ans--8 speed-leaf 1.2s linear backwards;
         @keyframes growing-grass-ans--8 {
           0% {
             transform-origin: bottom right;
